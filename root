@@ -1,0 +1,23 @@
+/*За допомогою функції pow(base, exponent) з бібліотеки <cmath>
+напишіть програму яка обчислює ,
+Це так зване число Погсона яке описує зростання яскравості зірок щоб , ,
+їх можна було розрізнити як зірки різного розміру зоряної величини ( ).
+Замість добування кореня п ятого степеня можна число піднести до ’ ,
+степеня 1/5.*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int num, root;
+	double froot;
+	cout << "Enter any number : ";
+	cin >> num;
+	cout << "Enter a root power : ";
+	cin >> root;
+	froot = 1.0 / root;
+	cout << "Result is : " << pow(num, froot);
+}
